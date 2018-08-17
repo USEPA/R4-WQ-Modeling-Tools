@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FREQUENCY", "FREQANAL.csproj", "{001BD642-AA97-47F0-B02A-3602DF9B228D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		CD_ROM|x64 = CD_ROM|x64.
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		DVD-5|Any CPU = DVD-5|Any CPU
+		DVD-5|x64 = DVD-5|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		SingleImage|Any CPU = SingleImage|Any CPU
+		SingleImage|x64 = SingleImage|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.CD_ROM|x64.ActiveCfg = Release|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.CD_ROM|x64.Build.0 = Release|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Debug|x64.ActiveCfg = Debug|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Debug|x64.Build.0 = Debug|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.DVD-5|x64.ActiveCfg = Debug|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.DVD-5|x64.Build.0 = Debug|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Release|x64.ActiveCfg = Release|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Release|x64.Build.0 = Release|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.SingleImage|x64.ActiveCfg = Release|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.SingleImage|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
