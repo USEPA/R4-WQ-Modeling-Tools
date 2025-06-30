@@ -1,0 +1,6 @@
+﻿namespace NCEIData
+{
+    class clsNLDAS
+    {
+    }
+}
