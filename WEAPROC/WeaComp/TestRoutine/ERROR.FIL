@@ -1,0 +1,417 @@
+12:37:49.967 : LOG_MSG:ERROR.FIL OPENED
+12:38:15.539 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:15.539 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:15.540 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:15.540 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:15.540 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:15.540 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:15.540 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:15.541 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:15.541 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:15.547 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:15.547 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:15.547 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:15.547 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.160 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.160 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.161 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:27.161 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:27.161 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:27.161 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:27.161 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.161 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:27.161 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.164 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:27.164 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:27.164 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:27.164 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.173 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.173 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.174 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:27.174 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:27.174 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:27.174 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:27.174 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.174 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:27.175 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.237 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:27.237 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:27.237 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:27.237 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.310 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.310 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.310 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:27.310 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:27.310 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:27.310 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:27.310 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.311 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:27.311 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.314 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.314 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         100           1 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.314 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         100           0
+12:38:27.314 : atcWdmHandle:New:100:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.318 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         100
+12:38:27.318 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         100           0
+12:38:27.318 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         100 F
+12:38:27.318 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.326 : F90_WDTPUT:call:         101          29           1        1979           1           1           0           0           0      360672           1           0           3
+12:38:27.370 : F90_WDTPUT:exit:           0
+12:38:27.370 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:27.370 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:27.371 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:27.371 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.373 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.373 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.373 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:27.373 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:27.373 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:27.373 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:27.373 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.374 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:27.374 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.449 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:27.449 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:27.449 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:27.449 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.514 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.515 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.515 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:27.515 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:27.515 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:27.515 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:27.515 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.515 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:27.515 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.516 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.516 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         100           1 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.516 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         100           0
+12:38:27.517 : atcWdmHandle:New:100:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.517 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         100
+12:38:27.518 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         100           0
+12:38:27.518 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         100 F
+12:38:27.518 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.525 : F90_WDTPUT:call:         101          30           1        1979           1           1           0           0           0      360672           1           0           3
+12:38:27.569 : F90_WDTPUT:exit:           0
+12:38:27.569 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:27.570 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:27.570 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:27.570 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.572 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.572 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.572 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:27.572 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:27.572 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:27.572 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:27.572 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.573 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:27.573 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.634 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:27.634 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:27.634 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:27.635 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.698 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.698 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.699 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:27.699 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:27.699 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:27.699 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:27.699 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.699 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:27.699 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:27.700 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.700 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         100           1 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.700 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         100           0
+12:38:27.700 : atcWdmHandle:New:100:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.701 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         100
+12:38:27.701 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         100           0
+12:38:27.701 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         100 F
+12:38:27.702 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:27.709 : F90_WDTPUT:call:         101          31           1        1979           1           1           0           0           0      360672           1           0           3
+12:38:27.754 : F90_WDTPUT:exit:           0
+12:38:27.754 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:27.754 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:27.754 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:27.755 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:44.959 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:44.959 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:44.959 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:44.959 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:44.959 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:44.959 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:44.959 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:44.960 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:44.960 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:44.963 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:44.963 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:44.963 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:44.963 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:44.966 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:44.966 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:44.966 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:44.966 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:44.966 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:44.966 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:44.966 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:44.967 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:44.967 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.041 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:45.042 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:45.042 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:45.042 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.121 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.121 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.121 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:45.121 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:45.122 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:45.122 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:45.122 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.122 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:45.122 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.123 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.123 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         100           1 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.123 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         100           0
+12:38:45.123 : atcWdmHandle:New:100:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.124 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         100
+12:38:45.124 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         100           0
+12:38:45.124 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         100 F
+12:38:45.125 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.132 : F90_WDTPUT:call:         101          32           1        1979           1           1           0           0           0      360672           1           0           3
+12:38:45.176 : F90_WDTPUT:exit:           0
+12:38:45.176 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:45.177 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:45.177 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:45.177 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.179 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.180 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.180 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:45.180 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:45.180 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:45.180 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:45.180 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.180 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:45.180 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.262 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:45.262 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:45.262 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:45.262 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.338 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.338 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.339 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:45.339 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:45.339 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:45.339 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:45.339 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.339 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:45.339 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.340 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.340 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         100           1 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.340 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         100           0
+12:38:45.340 : atcWdmHandle:New:100:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.341 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         100
+12:38:45.341 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         100           0
+12:38:45.341 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         100 F
+12:38:45.342 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.349 : F90_WDTPUT:call:         101          33           1        1979           1           1           0           0           0      360672           1           0           3
+12:38:45.393 : F90_WDTPUT:exit:           0
+12:38:45.393 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:45.394 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:45.394 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:45.394 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.396 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.396 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.396 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:45.396 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:45.396 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:45.396 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:45.397 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.397 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:45.397 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.473 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:45.473 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:45.473 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:45.474 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.549 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.549 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.549 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:38:45.549 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:38:45.549 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:38:45.549 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:38:45.549 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.549 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:38:45.549 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:38:45.550 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.550 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         100           1 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.550 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         100           0
+12:38:45.551 : atcWdmHandle:New:100:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.551 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         100
+12:38:45.551 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         100           0
+12:38:45.551 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         100 F
+12:38:45.552 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:38:45.559 : F90_WDTPUT:call:         101          34           1        1979           1           1           0           0           0      360672           1           0           3
+12:38:45.604 : F90_WDTPUT:exit:           0
+12:38:45.604 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:38:45.604 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:38:45.604 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:38:45.605 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:37.518 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:37.518 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:37.518 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:39:37.518 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:39:37.518 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:39:37.518 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:39:37.518 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:37.519 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:39:37.519 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:37.522 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:39:37.523 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:39:37.523 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:39:37.523 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.265 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.265 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.265 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:39:55.265 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:39:55.265 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:39:55.265 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:39:55.265 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.266 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:39:55.266 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.269 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:39:55.269 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:39:55.269 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:39:55.269 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.271 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.271 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.272 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:39:55.272 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:39:55.272 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:39:55.272 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:39:55.272 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.272 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:39:55.272 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.346 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:39:55.346 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:39:55.346 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:39:55.347 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.424 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.424 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.425 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:39:55.425 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:39:55.425 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:39:55.425 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:39:55.425 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.425 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:39:55.425 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.426 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.426 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         100           1 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.426 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         100           0
+12:39:55.427 : atcWdmHandle:New:100:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.427 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         100
+12:39:55.427 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         100           0
+12:39:55.428 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         100 F
+12:39:55.428 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.435 : F90_WDTPUT:call:         101          32           1        1979           1           1           0           0           0      360672           1           0           3
+12:39:55.481 : F90_WDTPUT:exit:           0
+12:39:55.481 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:39:55.482 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:39:55.482 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:39:55.482 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.484 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.484 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.485 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:39:55.485 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:39:55.485 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:39:55.485 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:39:55.485 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.485 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:39:55.485 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.561 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:39:55.561 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:39:55.561 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:39:55.561 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.637 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.637 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.637 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:39:55.637 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:39:55.637 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:39:55.637 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:39:55.637 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.638 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:39:55.638 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.639 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.639 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         100           1 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.639 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         100           0
+12:39:55.639 : atcWdmHandle:New:100:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.640 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         100
+12:39:55.640 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         100           0
+12:39:55.640 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         100 F
+12:39:55.640 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.648 : F90_WDTPUT:call:         101          33           1        1979           1           1           0           0           0      360672           1           0           3
+12:39:55.698 : F90_WDTPUT:exit:           0
+12:39:55.698 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:39:55.698 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:39:55.698 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:39:55.699 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.701 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.701 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.701 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:39:55.701 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:39:55.701 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:39:55.701 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:39:55.701 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.701 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:39:55.701 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.777 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:39:55.777 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:39:55.777 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:39:55.778 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.853 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.853 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.853 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+12:39:55.853 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+12:39:55.853 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+12:39:55.853 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+12:39:55.854 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.854 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+12:39:55.854 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+12:39:55.855 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.855 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         100           1 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.855 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         100           0
+12:39:55.855 : atcWdmHandle:New:100:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.856 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         100
+12:39:55.856 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         100           0
+12:39:55.856 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         100 F
+12:39:55.856 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\hspfmsg.wdm
+12:39:55.864 : F90_WDTPUT:call:         101          34           1        1979           1           1           0           0           0      360672           1           0           3
+12:39:55.909 : F90_WDTPUT:exit:           0
+12:39:55.909 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+12:39:55.909 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+12:39:55.909 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+12:39:55.909 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+07:00:37.555 : LOG_MSG:ERROR.FIL OPENED
+07:00:51.340 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+07:00:51.340 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+07:00:51.340 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+07:00:51.340 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+07:00:51.340 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+07:00:51.340 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+07:00:51.340 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+07:00:51.340 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+07:00:51.342 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+07:00:51.348 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+07:00:51.348 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+07:00:51.348 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+07:00:51.349 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+07:01:03.844 : HASS_ENT:F90_INQNAM:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+07:01:03.844 : HASS_ENT:INQUIRE_NAME:BEG:           0         101           0         101 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+07:01:03.845 : HASS_ENT:INQUIRE_NAME:INX:           0         101           0 F
+07:01:03.845 : HASS_ENT:INQUIRE_NAME:INF:           0         101           0 F
+07:01:03.845 : HASS_ENT:INQUIRE_NAME:DON:           0         101           0 F
+07:01:03.845 : HASS_ENT:INQUIRE_NAME:ASN:           0         101         101 F
+07:01:03.845 : HASS_ENT:F90_WDBOPNR:entr:WDMSFL,RWFLG:         101           0 D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+07:01:03.845 : HASS_ENT:F90_WDBOPNR:exit:WDMSFL,RETCOD         101           0
+07:01:03.845 : atcWdmHandle:New:101:0:D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
+07:01:03.854 : HASS_ENT:F90_WDFLCL:entry:WDMSFL:         101
+07:01:03.854 : HASS_ENT:F90_WDFLCL:close:WDMSFL:RETCOD:         101           0
+07:01:03.854 : HASS_ENT:F90_WDFLCL:opned:WDMSFL:         101 F
+07:01:03.854 : HASS_ENT:F90_WDFLCL:final:WDMSFL:           0 F D:\Dev\EPAPLUGINS\LSPCWeaCompNLDAS\TestRoutine\Data\sample-nldas.wdm
