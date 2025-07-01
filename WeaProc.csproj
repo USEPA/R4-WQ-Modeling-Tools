@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{001BD642-AA97-47F0-B02A-3602DF9B228D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NCEIData</RootNamespace>
+    <AssemblyName>WeatherProcessorV2.5.1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>NCEIData.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7B869879756653AD6FBD5F78CD47AD0051654FBC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FREQANAL_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="D4EM.Data, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ATCROUTINES\Bin\D4EM.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="D4EM.Data.MetCmp, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ATCROUTINES\Bin\D4EM.Data.MetCmp.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Analysis, Version=1.9.0.0, Culture=neutral, PublicKeyToken=df3f45fb0fe4cb0c, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Analysis.1.9\lib\net40-Client\DotSpatial.Analysis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Compatibility, Version=1.9.0.0, Culture=neutral, PublicKeyToken=094c8fdea7f4a002, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Compatibility.1.9\lib\net40-Client\DotSpatial.Compatibility.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Controls, Version=1.9.0.0, Culture=neutral, PublicKeyToken=4d9e49339a7d240c, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Controls.1.9\lib\net40-Client\DotSpatial.Controls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Data, Version=1.9.0.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Data.1.9\lib\net40-Client\DotSpatial.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Data.Forms, Version=1.9.0.0, Culture=neutral, PublicKeyToken=53ab5a198378d4c1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Data.Forms.1.9\lib\net40-Client\DotSpatial.Data.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Extensions, Version=1.9.0.0, Culture=neutral, PublicKeyToken=4d9e49339a7d240c, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Extensions.1.9\lib\net40-Client\DotSpatial.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Modeling.Forms">
+      <HintPath>..\packages\DotSpatial.Modeling.Forms.1.9\lib\net40-Client\DotSpatial.Modeling.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Mono">
+      <HintPath>..\packages\DotSpatial.Mono.1.9\lib\net40-Client\DotSpatial.Mono.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Positioning.Design, Version=1.9.0.0, Culture=neutral, PublicKeyToken=b4b0b185210c9dae, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Positioning.Design.1.9\lib\net40-Client\DotSpatial.Positioning.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Projections, Version=1.9.0.0, Culture=neutral, PublicKeyToken=272632bddd08a38b, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Projections.1.9\lib\net40-Client\DotSpatial.Projections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Projections.Forms, Version=1.9.0.0, Culture=neutral, PublicKeyToken=52099474f11b7ff0, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Projections.Forms.1.9\lib\net40-Client\DotSpatial.Projections.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Serialization, Version=1.9.0.0, Culture=neutral, PublicKeyToken=441f200f827611e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Serialization.1.9\lib\net40-Client\DotSpatial.Serialization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Symbology, Version=1.9.0.0, Culture=neutral, PublicKeyToken=6178c08da7998387, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Symbology.1.9\lib\net40-Client\DotSpatial.Symbology.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Symbology.Forms, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0544cdeefb662382, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Symbology.Forms.1.9\lib\net40-Client\DotSpatial.Symbology.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotSpatial.Topology, Version=1.9.0.0, Culture=neutral, PublicKeyToken=a66b5e9434ca3671, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Topology.1.9\lib\net40-Client\DotSpatial.Topology.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LumenWorks.Framework.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5ad3ea2f85776344, processorArchitecture=MSIL">
+      <HintPath>..\packages\LumenWorksCsvReader.4.0.0\lib\net45\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="MapWindow.Interfaces">
+      <HintPath>..\WdmUpload\References\MapWindow.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MapWinInterfaces, Version=4.8.6.42296, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WdmUpload\References\MapWinInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=4.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.4.11.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeaScenario">
+      <HintPath>..\WeaScenario\bin\Debug\WeaScenario.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDownload, Version=1.3.5358.29693, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\WebDownload.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.7\lib\net35-Client\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BoundingBox.cs" />
+    <Compile Include="clsAnnualStats.cs" />
+    <Compile Include="clsEDDE.cs" />
+    <Compile Include="clsCMIP6.cs" />
+    <Compile Include="clsCsvProcessor.cs" />
+    <Compile Include="clsTRMM.cs" />
+    <Compile Include="clsGLDAS.cs" />
+    <Compile Include="clsNLDAS.cs" />
+    <Compile Include="clsStations.cs" />
+    <Compile Include="clsEstimate.cs" />
+    <Compile Include="clsGHCN.cs" />
+    <Compile Include="clsGraph.cs" />
+    <Compile Include="clsHRAIN.cs" />
+    <Compile Include="clsISD.cs" />
+    <Compile Include="clsValidateSpatial.cs" />
+    <Compile Include="CMIPSeries.cs" />
+    <Compile Include="frmDataEDDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataEDDE.designer.cs">
+      <DependentUpon>frmDataEDDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDataCMIP6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataCMIP6.designer.cs">
+      <DependentUpon>frmDataCMIP6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDownloadCMIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDownloadCMIP.designer.cs">
+      <DependentUpon>frmDownloadCMIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDownloadEDDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDownloadEDDE.Designer.cs">
+      <DependentUpon>frmDownloadEDDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEDDEuse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEDDEuse.Designer.cs">
+      <DependentUpon>frmEDDEuse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpatial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpatial.Designer.cs">
+      <DependentUpon>frmSpatial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDB.Designer.cs">
+      <DependentUpon>frmDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExport.Designer.cs">
+      <DependentUpon>frmExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpatialSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpatialSelect.Designer.cs">
+      <DependentUpon>frmSpatialSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchGages.cs" />
+    <Compile Include="DrawRectangle.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmData.designer.cs">
+      <DependentUpon>frmData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDownload.designer.cs">
+      <DependentUpon>frmDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCEIdata.cs" />
+    <Compile Include="NCEIMessages.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeaSeries.cs" />
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmData.resx">
+      <DependentUpon>frmData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataEDDE.resx">
+      <DependentUpon>frmDataEDDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataCMIP6.resx">
+      <DependentUpon>frmDataCMIP6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDB.resx">
+      <DependentUpon>frmDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDownload.resx">
+      <DependentUpon>frmDownload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDownloadCMIP.resx">
+      <DependentUpon>frmDownloadCMIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDownloadEDDE.resx">
+      <DependentUpon>frmDownloadEDDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEDDEuse.resx">
+      <DependentUpon>frmEDDEuse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExport.resx">
+      <DependentUpon>frmExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpatial.resx">
+      <DependentUpon>frmSpatial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpatialSelect.resx">
+      <DependentUpon>frmSpatialSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\met.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License-LGPL.txt" />
+    <Content Include="met.ico" />
+    <None Include="Resources\openfolderhs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ATCROUTINES\atcControls\atcControls15.vbproj">
+      <Project>{b219575f-1541-41db-9fa4-d9d7cd62b4a5}</Project>
+      <Name>atcControls15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ATCROUTINES\atcData\atcData15.vbproj">
+      <Project>{a9a00cad-9ead-4228-ab08-6dc3baf253aa}</Project>
+      <Name>atcData15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ATCROUTINES\atcMetCmp\atcMetCmp15.vbproj">
+      <Project>{72264bdc-23f5-4a55-b53d-0752099cb263}</Project>
+      <Name>atcMetCmp15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ATCROUTINES\atcTimeseriesGDS\atcTimeseriesGDS15.vbproj">
+      <Project>{7b904366-afab-46fd-9b50-d78d38e3b54b}</Project>
+      <Name>atcTimeseriesGDS15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ATCROUTINES\atcTimeseriesGLDS\atcTimeseriesGLDS15.vbproj">
+      <Project>{cf2d3442-16aa-46a4-bbf9-0634ada3ae2d}</Project>
+      <Name>atcTimeseriesGLDS15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ATCROUTINES\atcTimeseriesNCDC\atcTimeseriesNCDC15.vbproj">
+      <Project>{2aa4fcfa-94d1-47c5-b515-e417da3af8dc}</Project>
+      <Name>atcTimeseriesNCDC15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ATCROUTINES\atcTimeseriesScript\atcTimeseriesScript15.vbproj">
+      <Project>{40de1f29-3531-4bc2-9d7e-324dc92689df}</Project>
+      <Name>atcTimeseriesScript15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ATCROUTINES\atcTimeseriesTRMM\atcTimeseriesTRMM15.vbproj">
+      <Project>{bb2247ef-4797-498a-b7d5-f1250cefbd49}</Project>
+      <Name>atcTimeseriesTRMM15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ATCROUTINES\atcUtility\atcUtility15.vbproj">
+      <Project>{67027820-9036-481e-80f6-077e5085f59d}</Project>
+      <Name>atcUtility15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ATCROUTINES\atcWDM\atcWDM15.vbproj">
+      <Project>{f0f41e48-35ed-43f4-ab00-30252b0e5690}</Project>
+      <Name>atcWDM15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ATCROUTINES\MapWinUtility\BASINS-MapWinUtility15.vbproj">
+      <Project>{33e88992-742f-4d13-823f-35d6a07b1aa1}</Project>
+      <Name>BASINS-MapWinUtility15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaComp\WeaComp.vbproj">
+      <Project>{9b5dbb77-b0fd-4ccf-a394-1c89fceb053e}</Project>
+      <Name>WeaComp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WdmUpload\WdmUpload.vbproj">
+      <Project>{ad66c5fc-9825-48d2-8658-9965e6647254}</Project>
+      <Name>WdmUpload</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaDB\WeaSDB.csproj">
+      <Project>{5d8e5999-9864-4e6b-81d1-9397be1f7972}</Project>
+      <Name>WeaSDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaEFDC\WeaEFDC.csproj">
+      <Project>{b0cf819d-094b-4b09-a0ae-bbcab05c4e49}</Project>
+      <Name>WeaEFDC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaGen\WeaGen.csproj">
+      <Project>{d65d03d2-e78f-4841-a4c5-db6a83d8c9a9}</Project>
+      <Name>WeaGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaLSPCAir\WeaLSPCAir.csproj">
+      <Project>{ebc6cd84-cbca-492a-a752-0f88459de017}</Project>
+      <Name>WeaLSPCAir</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaModelSDB\WeaModelSDB.csproj">
+      <Project>{466b0c48-6c7a-471a-9750-37ec949e9545}</Project>
+      <Name>WeaModelSDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaModel\WeaModel.csproj">
+      <Project>{ec9cac39-6d2a-4ee9-80cd-8e5fb3fffc77}</Project>
+      <Name>WeaModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaSWAT\WeaSWAT.csproj">
+      <Project>{a08ea3fb-e90c-4772-9ccd-c2255d4b9fee}</Project>
+      <Name>WeaSWAT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaSWMM\WeaSWMM.csproj">
+      <Project>{70e66141-24f6-47ea-a86e-58ae2fab819b}</Project>
+      <Name>WeaSWMM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaUtil\WeaUtil.csproj">
+      <Project>{882c4eaa-ecbc-432a-9982-862abcab0973}</Project>
+      <Name>WeaUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaWASP\WeaWASP.csproj">
+      <Project>{4f402fa3-18d3-4418-9fb2-c39c17be503a}</Project>
+      <Name>WeaWASP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaWDM\WeaWDM.csproj">
+      <Project>{a857402a-c282-4e40-a6b1-10d4d413914c}</Project>
+      <Name>WeaWDM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
