@@ -19,8 +19,8 @@ Public Class atcTimeseriesGDS
     Inherits atcTimeseriesSource
 
     Private Shared pFilter As String = "NASA NLDAS (*.nldas.txt)|*.nldas.txt|NASA GDS (*.gds)|*.gds|Text Files (*.txt)|*.txt|All Files (*.*)|*.*"
-    Private Shared pASC2FirstLine As String = "Metadata of the Time Series file:"
-    Private Shared pASC2DataHeader As String = "           Date&Time       Data"
+    Private Shared pASC2FirstLine As String = "Metadata for Requested Time Series:"
+    Private Shared pASC2DataHeader As String = "Date&Time               Data"
     Private pErrorDescription As String
     Private pJulianOffset As Double = New Date(1900, 1, 1).Subtract(New Date(1, 1, 1)).TotalDays
 
@@ -127,8 +127,11 @@ Public Class atcTimeseriesGDS
         Do
             Try
                 lCurLineString = NextLine(lInputReader)
-                If Date.TryParse(SafeSubstring(lCurLineString, 0, 20).Trim.Replace("Z", ":00"), lDate) AndAlso _
-                    Double.TryParse(SafeSubstring(lCurLineString, 21), lValue) Then
+                lCurLine = lCurLineString.Split(vbTab)
+                'If Date.TryParse(SafeSubstring(lCurLineString, 0, 20).Trim.Replace("Z", ":00"), lDate) AndAlso
+                '    Double.TryParse(SafeSubstring(lCurLineString, 21), lValue) Then
+                If Date.TryParse(lCurLine(0), lDate) AndAlso
+                    Double.TryParse(lCurLine(1), lValue) Then
                     lBuilder.AddValue(lDate, lValue)
                 End If
             Catch ex As EndOfStreamException
