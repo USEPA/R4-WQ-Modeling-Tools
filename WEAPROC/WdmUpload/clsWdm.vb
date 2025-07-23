@@ -28,8 +28,9 @@ Public Class clsWdm
         GHCN = 3
         GLDAS = 4
         TRMM = 5
-        CMIP6 = 6
-        EDDE = 7
+        PRISM = 6
+        CMIP6 = 7
+        EDDE = 8
     End Enum
 
     Public Sub New(ByVal _wrlog As StreamWriter, ByVal _station As String, ByVal _siteAttrib As List(Of String),
@@ -535,6 +536,9 @@ Public Class clsWdm
                      ByVal tstep As String)
 
         WriteLog("Entering WDMWrite routine ...")
+        Debug.WriteLine("In WDNWrite : scenario =" + Scenario)
+        Debug.WriteLine("In WDNWrite : location =" + Location)
+        Debug.WriteLine("In WDNWrite : description =" + descript)
 
         Try
             Dim wea As New WeaTimeSeries()
