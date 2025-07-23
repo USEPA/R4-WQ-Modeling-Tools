@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FREQANAL
+namespace NCEIData
 {
     partial class frmAbout : Form
     {
@@ -17,12 +12,7 @@ namespace FREQANAL
             this.Text = String.Format("About {0}", AssemblyTitle);
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = AssemblyDescription;
-            this.StartPosition = FormStartPosition.CenterScreen;
-
-            Cursor.Current = Cursors.WaitCursor;
         }
 
         #region Assembly Attribute Accessors
@@ -56,12 +46,7 @@ namespace FREQANAL
         {
             get
             {
-                object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyDescriptionAttribute), false);
-                if (attributes.Length == 0)
-                {
-                    return "";
-                }
-                return ((AssemblyDescriptionAttribute)attributes[0]).Description;
+                return ("Model Weather Data Processor-Allows downloading available meteorological stations and data from the global hourly(ISD), Global Historical Climate Network(GHCN), COOP Hourly Rainfall, North American Land Data Assimilation System (NLDAS), Global Land Data Assimilation System (GLDAS), Tropical Rainfall Measuring Mission (TRMM) datasets and regionally downscaled climate scenario (CMIP5-EDDE and CMIP6) datasets.  Includes spatial analysis of annual time series." + "\r\n\r\n\r\n" + "Powered by DotSpatial and BASINS V4.5 Utilities" + "\r\n\r\n" + "Contact hummel.paul@epa.gov for bugs and suggestions.");
             }
         }
 
@@ -82,12 +67,7 @@ namespace FREQANAL
         {
             get
             {
-                object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false);
-                if (attributes.Length == 0)
-                {
-                    return "";
-                }
-                return ((AssemblyCopyrightAttribute)attributes[0]).Copyright;
+                return "Copyright US EPA Region 4";
             }
         }
 
@@ -95,15 +75,14 @@ namespace FREQANAL
         {
             get
             {
-                object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCompanyAttribute), false);
-                if (attributes.Length == 0)
-                {
-                    return "";
-                }
-                return ((AssemblyCompanyAttribute)attributes[0]).Company;
+                return ("U.S. EPA Region 4" + "\r\n" + "Surface Water Protection Branch, Water Division");
             }
         }
         #endregion
 
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

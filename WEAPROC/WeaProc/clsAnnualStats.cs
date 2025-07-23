@@ -173,6 +173,18 @@ namespace NCEIData
                                     string staid = (string)dataseries.Attributes.GetValue("STAID");
                                     string location = (string)dataseries.Attributes.GetValue("Location");
                                     //string scenario = (string)dataseries.Attributes.GetValue("Scenario");
+                                    //int[] lSDate = new int[6];
+                                    //double lSJDate = (double)dataseries.Attributes.GetValue("SJDAY");
+                                    //double lEJDate = (double)dataseries.Attributes.GetValue("EJDAY");
+                                    //atcUtility.modDate.J2Date(lSJDate, ref lSDate);
+                                    //if (lSDate[1] >1 || lSDate[2]  >1) //remove partial year at the start
+                                    //{
+                                    //    atcUtility.modDate.J2DateRounddown(lSJDate, atcTimeUnit.TUYear, ref lSDate);
+                                    //    lSDate[0]++;
+                                    //    lSJDate = Date2J(lSDate);
+                                    //    dataseries = modTimeseriesMath.SubsetByDate(dataseries, lSJDate, lEJDate, null);
+                                    //}
+
 
                                     switch (svar)
                                     {

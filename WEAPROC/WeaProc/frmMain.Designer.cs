@@ -551,7 +551,7 @@
             // 
             this.emailFernandezGlennepagovForProblemsToolStripMenuItem.Name = "emailFernandezGlennepagovForProblemsToolStripMenuItem";
             this.emailFernandezGlennepagovForProblemsToolStripMenuItem.Size = new System.Drawing.Size(399, 26);
-            this.emailFernandezGlennepagovForProblemsToolStripMenuItem.Text = "Email Fernandez.Glenn@epa.gov for problems";
+            this.emailFernandezGlennepagovForProblemsToolStripMenuItem.Text = "Email hummel.paul@epa.gov for problems";
             // 
             // appManager
             // 

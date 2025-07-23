@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Windows.Forms;
 using WeaModel;
 using WeaModelSDB;
@@ -92,26 +93,26 @@ namespace NCEIData
         private void SetVarMapping()
         {
             dictMapVars.Clear();
-            dictMapVars.Add("PREC", "APCPsfc");
-            dictMapVars.Add("PRCP", "APCPsfc");
-            dictMapVars.Add("TEMP", "TMP2m");
-            dictMapVars.Add("VWND", "VGRD10m");
-            dictMapVars.Add("UWND", "UGRD10m");
-            dictMapVars.Add("SOLR", "DSWRFsfc");
-            dictMapVars.Add("HUMI", "SPFH2m");
-            dictMapVars.Add("LRAD", "DLWRFsfc");
-            dictMapVars.Add("ATMP", "PRESsfc");
+            dictMapVars.Add("PREC", "Rainf");
+            dictMapVars.Add("PRCP", "Rainf");
+            dictMapVars.Add("TEMP", "Tair");
+            dictMapVars.Add("VWND", "Wind_N");
+            dictMapVars.Add("UWND", "Wind_E");
+            dictMapVars.Add("SOLR", "SWdown");
+            dictMapVars.Add("HUMI", "Qair");
+            dictMapVars.Add("LRAD", "LWdown");
+            dictMapVars.Add("ATMP", "PSurf");
             //dictMapVars.Add("PEVT", "PEVAPsfc");
 
             NLDASVars.Clear();
-            NLDASVars.Add("APCPsfc", "PREC");
-            NLDASVars.Add("TMP2m", "ATEM");
-            NLDASVars.Add("VGRD10m", "WINDV");
-            NLDASVars.Add("UGRD10m", "WINDU");
-            NLDASVars.Add("DSWRFsfc", "SOLR");
-            NLDASVars.Add("SPFH2m", "DEWP");
-            NLDASVars.Add("PRESsfc", "ATMP"); //surface pressure
-            NLDASVars.Add("DLWRFsfc", "LRAD");//longwave rad
+            NLDASVars.Add("Rainf", "PREC");
+            NLDASVars.Add("Tair", "ATEM");
+            NLDASVars.Add("Wind_N", "WINDV");
+            NLDASVars.Add("Wind_E", "WINDU");
+            NLDASVars.Add("SWdown", "SOLR");
+            NLDASVars.Add("Qair", "DEWP");
+            NLDASVars.Add("PSurf", "ATMP"); //surface pressure
+            NLDASVars.Add("LWdown", "LRAD");//longwave rad
             //NLDASVars.Add("PEVAPsfc", "PEVT");
         }
         public void ProcessNLDASdata()
@@ -211,13 +212,22 @@ namespace NCEIData
             string nldasfile = string.Empty;
             string gridX = site.Substring(1, 3);
             string gridY = site.Substring(5, 3);
-            string urlpath = "https://hydro1.sci.gsfc.nasa.gov/daac-bin/access/timeseries.cgi?variable=NLDAS:NLDAS_FORA0125_H.002:";
+
+            MetGages sta = new MetGages();
+            dictSelSites.TryGetValue(site, out sta);
+            string gridLat = Convert.ToString(sta.LATITUDE);
+            string gridLng = Convert.ToString(sta.LONGITUDE);
+
+            //string urlpath = "https://hydro1.sci.gsfc.nasa.gov/daac-bin/access/timeseries.cgi?variable=NLDAS:NLDAS_FORA0125_H.002:";
+            //"https://hydro1.gesdisc.eosdis.nasa.gov/daac-bin/access/timeseries.cgi?variable=NLDAS2:NLDAS_FORA0125_H_v2.0:Tair&startDate=2024-01-01T00&endDate=2025-01-01T00&location=GEOM:POINT(-96.1875,%2043.9375)&type=asc2";
+            string urlpath = "https://hydro1.gesdisc.eosdis.nasa.gov/daac-bin/access/timeseries.cgi?variable=NLDAS2:NLDAS_FORA0125_H_v2.0:";
 
             atcDateFormat lDateFormat = new atcUtility.atcDateFormat();
             lDateFormat.DateOrder = atcDateFormat.DateOrderEnum.YearMonthDay;
             lDateFormat.IncludeMinutes = false;
             lDateFormat.DateSeparator = "-";
             lDateFormat.DateTimeSeparator = "T";
+            lDateFormat.Midnight24 = false;
 
             string lStartDate = lDateFormat.JDateToString(BegDate.ToOADate());
             string lEndDate = lDateFormat.JDateToString(EndDate.ToOADate());
@@ -238,7 +248,7 @@ namespace NCEIData
                 lURL = urlpath + svar;
                 lURL += "&startDate=" + lStartDate;
                 lURL += "&endDate=" + lEndDate;
-                lURL += "&location=NLDAS:X" + gridX + "-Y" + gridY + "&type=asc2";
+                lURL += "&location=GEOM:POINT(" + gridLng + ",%20" + gridLat + ")&type=asc2";
 
                 try
                 {
@@ -259,25 +269,25 @@ namespace NCEIData
                         {
                             switch (svar)
                             {
-                                case "APCPsfc":
+                                case "Rainf":
                                     lstProcessedVar.Add("PREC");
                                     break;
-                                case "TMP2m":
+                                case "Tair":
                                     lstProcessedVar.Add("ATEM");
                                     break;
-                                case "UGRD10m":
+                                case "Wind_E":
                                     lstProcessedVar.Add("WIND");
                                     lstProcessedVar.Add("WNDD");
                                     break;
-                                case "DSWRFsfc":
+                                case "SWdown":
                                     lstProcessedVar.Add("SOLR");
                                     lstProcessedVar.Add("LRAD");
                                     lstProcessedVar.Add("CLOU");
                                     break;
-                                case "SPFH2m":
+                                case "Qair":
                                     lstProcessedVar.Add("DEWP");
                                     break;
-                                case "PRESsfc":
+                                case "PSurf":
                                     lstProcessedVar.Add("ATMP");
                                     break;
                                 case "PEVAPsfc":
@@ -367,7 +377,7 @@ namespace NCEIData
 
                         switch (svar)
                         {
-                            case "APCPsfc":
+                            case "Rainf":
                                 isExist = CheckWDMForSeries(lWDM, grid, "PREC");
                                 if (isExist) fMain.WriteLogFile("WDM aready contains PREC for " + grid.ToString());
                                 lConvertedTseries = ltseries / 25.4; //OK
@@ -436,7 +446,7 @@ namespace NCEIData
                                     fMain.WriteLogFile(errmsg + " PEVT!");
                                 break;
 
-                            case "TMP2m":
+                            case "Tair":
                                 lCons = "ATEM";
                                 lDesc = "Hourly Air Temperature in Degrees F";
                                 lConvertedTseries = (ltseries * 9 / 5) - 459.67; //OK
@@ -487,7 +497,7 @@ namespace NCEIData
                                 lTmax = null;
                                 break;
 
-                            case "UGRD10m":
+                            case "Wind_E":
                                 lCons = "WINDU";
                                 lDesc = "Hourly Zonal Wind in mph";
                                 lConvertedTseries = (atcTimeseries)ltseries.Clone(); //* 2.237 for mph
@@ -498,7 +508,7 @@ namespace NCEIData
                                 if (isExist) fMain.WriteLogFile("WDM aready contains WINDU for " + grid.ToString());
                                 break;
 
-                            case "VGRD10m":
+                            case "Wind_N":
                                 lCons = "WINDV";
                                 lDesc = "Hourly Meridional Wind in m/s";
                                 isExist = CheckWDMForSeries(lWDM, grid, lCons);
@@ -508,7 +518,7 @@ namespace NCEIData
                                 lConvertedTseries = lConvertedTseries * 2.237;
                                 break;
 
-                            case "PRESsfc":
+                            case "PSurf":
                                 lCons = "ATMP";
                                 lDesc = "Hourly Sea Level Pressure in mmHg";
                                 lConvertedTseries = ltseries * 0.00750062; //1 Pa = 0.000750062 mmHg
@@ -531,7 +541,7 @@ namespace NCEIData
                                     Debug.WriteLine("AddDataset failed when adding NLDAS " + lConvertedTseries.ToString());
                                 break;
 
-                            case "DLWRFsfc":
+                            case "LWdown":
                                 lCons = "LRAD";
                                 lDesc = "Hourly Longwave Radiation in Langleys";
 
@@ -564,7 +574,7 @@ namespace NCEIData
                                     Debug.WriteLine("AddDataset failed when adding NLDAS " + lConvertedTseries.ToString());
                                 break;
 
-                            case "DSWRFsfc":
+                            case "SWdown":
                                 lCons = "SOLR";
                                 lDesc = "Hourly Solar Radiation in Langleys";
 
@@ -587,7 +597,7 @@ namespace NCEIData
                                 lConvertedTseries.Attributes.GetValue("Longitude"));
                                 lConvertedTseries.Attributes.SetValue("COMPFG", 1);
 
-                                //Save "DSWRFsfc"
+                                //Save "SWdown"
                                 if (lWDM.AddDataSet(lConvertedTseries, atcData.atcDataSource.EnumExistAction.ExistRenumber))
                                 {
                                     atcTimeseries dsol = atcData.modTimeseriesMath.Aggregate(lConvertedTseries, atcTimeUnit.TUDay, 1, atcTran.TranSumDiv, lWDM);
@@ -670,7 +680,7 @@ namespace NCEIData
                                     Debug.WriteLine("AddDataset failed when adding NLDAS " + lConvertedTseries.ToString());
                                 break;
 
-                            case "SPFH2m":
+                            case "Qair":
                                 lCons = "DEWP";
                                 lDesc = "Hourly Dew Point Temperature";
 
@@ -701,7 +711,7 @@ namespace NCEIData
                                 break;
                         }
                         //now write the new timeseries to wdm (solar and prec has been written)
-                        if (svar.Contains("TMP2m") || svar.Contains("SPFH2m") || svar.Contains("UGRD10m") || svar.Contains("VGRD10m"))
+                        if (svar.Contains("Tair") || svar.Contains("Qair") || svar.Contains("Wind_E") || svar.Contains("Wind_N"))
                         {
                             lConvertedTseries.Attributes.SetValue("ID", lNextDSN);
                             lConvertedTseries.Attributes.SetValue("Constituent", lCons);
@@ -719,17 +729,17 @@ namespace NCEIData
 
                             if (lWDM.AddDataSet(lConvertedTseries, atcData.atcDataSource.EnumExistAction.ExistReplace))
                             {
-                                if ((svar.Contains("TMP2m") || svar.Contains("SPFH2m")))
+                                if ((svar.Contains("Tair") || svar.Contains("Qair")))
                                 {
                                     //CalculateAnnualTimeSeries((int)atcTran.TranAverSame, lWDM, annualWDM, lConvertedTseries, lCons, grid, elev, "deg F");
                                 }
                             } else
                                 Debug.WriteLine("AddDataset failed when adding NLDAS " + ltseries.ToString());
                         }
-                        //VGRD10m is processed before UGRD10m
-                        if (svar.Contains("UGRD10m"))
+                        //Wind_N is processed before Wind_E
+                        if (svar.Contains("Wind_E"))
                         {
-                            //if we have both VGRD10m and UGRD10m, compute WIND,  find VGRD10m
+                            //if we have both Wind_N and Wind_E, compute WIND,  find Wind_N
                             atcTimeseries lUWINDTseries = lConvertedTseries;
                             atcTimeseries lVWINDTseries = new atcTimeseries(lWDM);
                             atcTimeseries lWndDir = new atcTimeseries(lWDM);
@@ -761,8 +771,7 @@ namespace NCEIData
                                 double wdeg = 180 * Math.Atan2(uw, vw) / Math.PI;
                                 //deg met, deg vect+180 , 0 to 360
                                 wdeg = wdeg + 180;
-                                //convert 10 m to 2 m wind with zo=0.1 assume grassland
-                                lConvertedTseries.Values[lValIndex] = 0.65052*Math.Pow(wnd, 0.5);
+                                lConvertedTseries.Values[lValIndex] = Math.Pow(wnd, 0.5);
                                 lWndDir.Values[lValIndex] = wdeg;
                             } //next lValIndex
 
@@ -1018,7 +1027,7 @@ namespace NCEIData
                 DateTime lDate; Double lValue;
                 for (int lIndex = 1; lIndex <= tseries.numValues; lIndex++)
                 {
-                    lDate = DateTime.FromOADate(tseries.Dates.Values[lIndex - 1]);
+                    lDate = DateTime.FromOADate(tseries.Dates.Values[lIndex]);
                     lValue = tseries.Values[lIndex];
                     if (!dictSeries.ContainsKey(lDate))
                         dictSeries.Add(lDate, lValue.ToString());
@@ -1179,7 +1188,7 @@ namespace NCEIData
             Double lValue;
             for (int lIndex = 1; lIndex <= tseries.numValues; lIndex++)
             {
-                lDate = DateTime.FromOADate(tseries.Dates.Values[lIndex - 1]);
+                lDate = DateTime.FromOADate(tseries.Dates.Values[lIndex]);
                 lValue = tseries.Values[lIndex];
                 //if (!dictSeries.ContainsKey(lDate))
                 //    dictSeries.Add(lDate, lValue.ToString());
@@ -1199,8 +1208,8 @@ namespace NCEIData
             {
                 if (lWDM.Open(WdmFile))
                 {
-                    //if we have both VGRD10m and UGRD10m, compute WIND
-                    //find UGRD10m
+                    //if we have both Wind_N and Wind_E, compute WIND
+                    //find Wind_E
                     atcTimeseries lUWINDTseries = GetTimeSeries(grid, "WINDU");
                     atcTimeseries lVWINDTseries = GetTimeSeries(grid, "WINDV");
 

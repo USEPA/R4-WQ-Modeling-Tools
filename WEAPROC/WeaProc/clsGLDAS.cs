@@ -938,7 +938,7 @@ namespace NCEIData
                 DateTime lDate; Double lValue;
                 for (int lIndex = 1; lIndex <= tseries.numValues; lIndex++)
                 {
-                    lDate = DateTime.FromOADate(tseries.Dates.Values[lIndex - 1]);
+                    lDate = DateTime.FromOADate(tseries.Dates.Values[lIndex]);
                     lValue = tseries.Values[lIndex];
                     if (!dictSeries.ContainsKey(lDate))
                         dictSeries.Add(lDate, lValue.ToString());
@@ -1100,7 +1100,7 @@ namespace NCEIData
             Double lValue;
             for (int lIndex = 1; lIndex <= tseries.numValues; lIndex++)
             {
-                lDate = DateTime.FromOADate(tseries.Dates.Values[lIndex - 1]);
+                lDate = DateTime.FromOADate(tseries.Dates.Values[lIndex]);
                 lValue = tseries.Values[lIndex];
                 //if (!dictSeries.ContainsKey(lDate))
                 //    dictSeries.Add(lDate, lValue.ToString());

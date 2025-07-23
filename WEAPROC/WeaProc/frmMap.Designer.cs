@@ -1,4 +1,4 @@
-﻿namespace FREQANAL
+﻿namespace NCEIWeaProc
 {
     partial class frmMap
     {

@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NCEIData</RootNamespace>
-    <AssemblyName>WeatherProcessorV2.5.1</AssemblyName>
+    <AssemblyName>WeatherProcessorV2.60</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -308,6 +308,7 @@
     <Compile Include="WeaSeries.cs" />
     <EmbeddedResource Include="frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmData.resx">
       <DependentUpon>frmData.cs</DependentUpon>
