@@ -284,9 +284,11 @@ namespace WeaWDM
                     int num = (int)lDataSet.numValues;
                     //sdate = DateTime.FromOADate(lDataSet.Dates.Values.First());
                     //edate = DateTime.FromOADate(lDataSet.Dates.Values.Last());
-                    sdate = DateTime.FromOADate(lDataSet.Dates.Values[0]);
-                    edate = DateTime.FromOADate(lDataSet.Dates.Values[num-1]);
-//#if debug
+                    //sdate = DateTime.FromOADate(lDataSet.Dates.Values[0]);
+                    //edate = DateTime.FromOADate(lDataSet.Dates.Values[num - 1]);
+                    sdate = DateTime.FromOADate(lDataSet.Dates.Values[1]);
+                    edate = DateTime.FromOADate(lDataSet.Dates.Values[num]);
+                    //#if debug
                     Debug.WriteLine("Numvalues = "+ num.ToString());
                     Debug.WriteLine("{0},{1},{2},{3},{4},{5}", stnam,svar,sdate.Year.ToString(), edate.Year.ToString(),
                     sdate.ToString(), edate.ToString());
