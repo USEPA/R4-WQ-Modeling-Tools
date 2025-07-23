@@ -242,9 +242,9 @@ Partial Class frmWeaComp
         Me.layoutMain.SetColumnSpan(Me.Label2, 3)
         Me.Label2.Location = New System.Drawing.Point(8, 12)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(845, 26)
+        Me.Label2.Size = New System.Drawing.Size(845, 39)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Routine calculates PEVT using Hamon and Penman method from input timeseries in a " &
+        Me.Label2.Text = "Select desired computation from the 'Compute Series' menu." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Routines calculate PEVT using Hamon, Penman, and Penman-Montieth methods from input timeseries in a " &
     "WDM." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Also calculates solar radiation from cloud cover. "
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '

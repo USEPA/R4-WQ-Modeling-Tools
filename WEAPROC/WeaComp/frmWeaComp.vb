@@ -9,7 +9,6 @@ Imports atcData
 Imports atcWDM
 Imports atcData.atcDataManager
 Imports MapWinUtility
-Imports WeaCompUtil
 
 Public Class frmWeaComp
     Private NCEIFile As String
@@ -447,12 +446,12 @@ Public Class frmWeaComp
             Dim lCTS() As Double = {0.0055, 0.0055, 0.0055, 0.0055, 0.0055, 0.0055,
                                     0.0055, 0.0055, 0.0055, 0.0055, 0.0055, 0.0055, 0.0055}
 
-            Dim lHamonCmTS As atcTimeseries = WeaCompUtil.PanEvaporationTimeseriesComputedByHamon("NCDC", lTMinTSer, lTMaxTSer, lWdmDS, True, lLatitude, lCTS)
+            Dim lHamonCmTS As atcTimeseries = PanEvaporationTimeseriesComputedByHamon("NCDC", lTMinTSer, lTMaxTSer, lWdmDS, True, lLatitude, lCTS)
             lTMaxTSer = Nothing
             lTMinTSer = Nothing
             lTemp = Nothing
 
-            lHamonCmTS = WeaCompUtil.DisSolPet(lHamonCmTS, Nothing, 2, lLatitude)
+            lHamonCmTS = DisSolPet(lHamonCmTS, Nothing, 2, lLatitude)
             lHamonCmTS.Attributes.SetValue("ID", lCounter)
             lHamonCmTS.Attributes.SetValue("Constituent", "PEVT")
             lHamonCmTS.Attributes.SetValue("TSTYPE", "PEVT")
