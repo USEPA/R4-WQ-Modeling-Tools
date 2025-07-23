@@ -577,7 +577,7 @@ namespace NCEIData
                         int yr = 0;
                         for (int i = 0; i < ncount; i++)
                         {
-                            yr = (dictSeries.Keys.ElementAt(i).Year);
+                            yr = (dictSeries.Keys.ElementAt(i).Year) + 1;
                             string val = dictSeries.Values.ElementAt(i).ToString("F2");
                             double dval = 0.0;
                             dval = Convert.ToDouble(val);
@@ -1750,8 +1750,10 @@ namespace NCEIData
                     if (icnt == 1)
                     {
                         lstColNames.Clear();
-                        StartYear = BegTime.Year - 1;
-                        EndYear = EndTime.Year - 1;
+                        //StartYear = BegTime.Year - 1;
+                        //EndYear = EndTime.Year - 1;
+                        StartYear = BegTime.Year;
+                        EndYear = EndTime.Year;
                         Debug.WriteLine("Start {0}, End {1}", StartYear.ToString(), EndYear.ToString());
                         for (int i = StartYear; i <= EndYear; i++)
                             lstColNames.Add(i.ToString());
