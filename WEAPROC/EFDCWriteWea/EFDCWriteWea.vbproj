@@ -77,31 +77,31 @@
   <ItemGroup>
     <Reference Include="atcData, Version=3.1.1.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Dev\EPAPLUGINS\BASINS45\bin\Plugins\BASINS\atcData.dll</HintPath>
+      <HintPath>..\..\ATCROUTINES\Bin\atcData.dll</HintPath>
     </Reference>
     <Reference Include="atcTimeseriesBinary, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Dev\EPAPLUGINS\BASINS45\bin\D4EMDownload\atcTimeseriesBinary.dll</HintPath>
+      <HintPath>..\..\ATCROUTINES\Bin\atcTimeseriesBinary.dll</HintPath>
     </Reference>
     <Reference Include="atcTimeseriesD4EM, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Dev\EPAPLUGINS\BASINS45\bin\D4EMDownload\atcTimeseriesD4EM.dll</HintPath>
+      <HintPath>..\..\ATCROUTINES\Bin\atcTimeseriesD4EM.dll</HintPath>
     </Reference>
     <Reference Include="atcTimeseriesMath, Version=3.1.1.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Dev\EPAPLUGINS\BASINS45\bin\Plugins\BASINS\atcTimeseriesMath.dll</HintPath>
+      <HintPath>..\..\ATCROUTINES\Bin\atcTimeseriesMath.dll</HintPath>
     </Reference>
     <Reference Include="atcUtility, Version=3.1.2.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Dev\EPAPLUGINS\BASINS45\bin\Plugins\BASINS\atcUtility.dll</HintPath>
+      <HintPath>..\..\ATCROUTINES\Bin\atcUtility.dll</HintPath>
     </Reference>
     <Reference Include="atcWDM, Version=3.1.1.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Dev\EPAPLUGINS\BASINS45\bin\Plugins\BASINS\atcWDM.dll</HintPath>
+      <HintPath>..\..\ATCROUTINES\Bin\atcWDM.dll</HintPath>
     </Reference>
     <Reference Include="MapWinUtility, Version=4.8.8.31827, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Dev\EPAPLUGINS\BASINS45\bin\MapWinUtility.dll</HintPath>
+      <HintPath>..\..\ATCROUTINES\Bin\MapWinUtility.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
