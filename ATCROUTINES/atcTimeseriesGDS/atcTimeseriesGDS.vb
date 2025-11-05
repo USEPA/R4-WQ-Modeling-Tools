@@ -71,8 +71,15 @@ Public Class atcTimeseriesGDS
                             lFirstLine = NextLine(lInputReader)
                         End While
                         Return False
-                    ElseIf lFirstLine.Equals(pASC2FirstLine) Then
-                        lOpened = ReadASC2(lInputReader)
+                    ElseIf Not lOpened Then
+                        While Not lFirstLine.Equals(pASC2DataHeader)
+                            If lFirstLine.Equals(pASC2FirstLine) Then
+                                lOpened = ReadASC2(lInputReader)
+                                Exit While
+                            Else
+                                lFirstLine = NextLine(lInputReader)
+                            End If
+                        End While
                     Else
                         lOpened = ReadGDS(lFirstLine, lInputReader)
                     End If
