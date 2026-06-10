@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JW7gPtgkY7Q=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PHUMMEL\\dev\\R4-WQ-Modeling-Tools\\WeatherProc2026\\LSPCWriteAir\\LSPCWriteAir.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PHUMMEL\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

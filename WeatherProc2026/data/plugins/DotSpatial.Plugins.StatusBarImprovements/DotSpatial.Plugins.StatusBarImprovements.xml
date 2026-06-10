@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DotSpatial.Plugins.StatusBarImprovements</name>
+    </assembly>
+    <members>
+        <member name="T:DotSpatial.Plugins.StatusBarImprovements.StatusShowCoordinates">
+            <summary>
+            Displays latitude and longitude coordinates at the current cursor position.
+            </summary>
+        </member>
+        <member name="M:DotSpatial.Plugins.StatusBarImprovements.StatusShowCoordinates.#ctor">
+            <summary>
+            Initializes a new instance of the StatusShowCoordinates class.
+            </summary>
+        </member>
+        <member name="M:DotSpatial.Plugins.StatusBarImprovements.StatusShowCoordinates.Activate">
+            <inheritdoc />
+        </member>
+        <member name="M:DotSpatial.Plugins.StatusBarImprovements.StatusShowCoordinates.Deactivate">
+            <inheritdoc />
+        </member>
+        <member name="T:DotSpatial.Plugins.StatusBarImprovements.StatusShowSelectionCount">
+            <summary>
+            Displays how many features are selected in which layer.
+            </summary>
+        </member>
+        <member name="M:DotSpatial.Plugins.StatusBarImprovements.StatusShowSelectionCount.#ctor">
+            <summary>
+            Initializes a new Instance of the StatusShowSelectionCount class.
+            </summary>
+        </member>
+        <member name="M:DotSpatial.Plugins.StatusBarImprovements.StatusShowSelectionCount.Activate">
+            <inheritdoc />
+        </member>
+        <member name="M:DotSpatial.Plugins.StatusBarImprovements.StatusShowSelectionCount.Deactivate">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

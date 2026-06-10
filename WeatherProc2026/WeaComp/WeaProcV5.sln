@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaProc", "WeaProc\WeaProc.csproj", "{001BD642-AA97-47F0-B02A-3602DF9B228D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WdmUpload", "WdmUpload\WdmUpload.vbproj", "{AD66C5FC-9825-48D2-8658-9965E6647254}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WeaComp", "WeaComp\WeaComp.vbproj", "{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		CD_ROM|x64 = CD_ROM|x64
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		DVD-5|Any CPU = DVD-5|Any CPU
+		DVD-5|x64 = DVD-5|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		SingleImage|Any CPU = SingleImage|Any CPU
+		SingleImage|x64 = SingleImage|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.CD_ROM|x64.ActiveCfg = Release|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.CD_ROM|x64.Build.0 = Release|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Debug|x64.ActiveCfg = Debug|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Debug|x64.Build.0 = Debug|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.DVD-5|x64.ActiveCfg = Debug|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.DVD-5|x64.Build.0 = Debug|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Release|x64.ActiveCfg = Release|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.Release|x64.Build.0 = Release|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.SingleImage|x64.ActiveCfg = Release|x64
+		{001BD642-AA97-47F0-B02A-3602DF9B228D}.SingleImage|x64.Build.0 = Release|x64
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.CD_ROM|x64.ActiveCfg = Release|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.CD_ROM|x64.Build.0 = Release|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.Debug|x64.Build.0 = Debug|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.DVD-5|x64.ActiveCfg = Debug|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.DVD-5|x64.Build.0 = Debug|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.Release|x64.ActiveCfg = Release|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.Release|x64.Build.0 = Release|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.SingleImage|x64.ActiveCfg = Release|Any CPU
+		{AD66C5FC-9825-48D2-8658-9965E6647254}.SingleImage|x64.Build.0 = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.CD_ROM|x64.ActiveCfg = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.CD_ROM|x64.Build.0 = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.Debug|x64.Build.0 = Debug|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.DVD-5|x64.ActiveCfg = Debug|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.DVD-5|x64.Build.0 = Debug|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.Release|x64.ActiveCfg = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.Release|x64.Build.0 = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.SingleImage|x64.ActiveCfg = Release|Any CPU
+		{9B5DBB77-B0FD-4CCF-A394-1C89FCEB053E}.SingleImage|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C69DDBC4-5193-483F-B087-93494A2F52A1}
+	EndGlobalSection
+EndGlobal
