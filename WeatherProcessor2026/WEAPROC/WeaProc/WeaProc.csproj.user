@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmDataCMIP6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmDataEDDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmDownloadCMIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmDownloadEDDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmEDDEuse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSpatial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSpatialSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="frmAbout.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
