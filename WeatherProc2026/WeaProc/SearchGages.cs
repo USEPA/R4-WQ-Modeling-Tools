@@ -716,7 +716,7 @@ namespace NCEIData
                                 if (!(lstSiteElev.ElementAt(i) == null))
                                     station.ELEVATION = lstSiteElev.ElementAt(i).ToString();
                                 else
-                                    station.ELEVATION = string.Empty;
+                                    station.ELEVATION = "0"; //string.Empty;
                                 if (GageInCoverage(sta))
                                 {
                                     if (this.dictGages.TryGetValue(sta, out aws))
