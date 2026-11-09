@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WeaEFDC</RootNamespace>
+    <MyType>Windows</MyType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <AssemblyTitle>D4EM.Model.SWAT</AssemblyTitle>
+    <Product>D4EM.Model.SWAT</Product>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutputPath>..\bin\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atcData">
+      <HintPath>..\..\atcPackages\atcData.dll</HintPath>
+    </Reference>
+    <Reference Include="atcTimeseriesBinary">
+      <HintPath>..\..\atcPackages\atcTimeseriesBinary.dll</HintPath>
+    </Reference>
+    <Reference Include="atcTimeseriesD4EM">
+      <HintPath>..\..\atcPackages\atcTimeseriesD4EM.dll</HintPath>
+    </Reference>
+    <Reference Include="atcTimeseriesMath">
+      <HintPath>..\..\atcPackages\atcTimeseriesMath.dll</HintPath>
+    </Reference>
+    <Reference Include="atcUtility">
+      <HintPath>..\..\atcPackages\atcUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="atcWDM">
+      <HintPath>..\..\atcPackages\atcWDM.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+</Project>

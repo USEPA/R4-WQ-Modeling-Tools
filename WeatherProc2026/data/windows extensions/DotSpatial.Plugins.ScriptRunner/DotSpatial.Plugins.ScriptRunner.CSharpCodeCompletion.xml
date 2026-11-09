@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DotSpatial.Plugins.ScriptRunner.CSharpCodeCompletion</name>
+    </assembly>
+    <members>
+        <member name="T:CSharpEditor.CodeCompletionData">
+            <summary>
+            Represents an item in the code completion window.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionData.#ctor(ICSharpCode.SharpDevelop.Dom.IMember)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CSharpEditor.CodeCompletionData"/> class.
+            </summary>
+            <param name="member">Member used for initialization.</param>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionData.#ctor(ICSharpCode.SharpDevelop.Dom.IClass)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CSharpEditor.CodeCompletionData"/> class.
+            </summary>
+            <param name="c">Class used for initialization.</param>
+        </member>
+        <member name="P:CSharpEditor.CodeCompletionData.ICSharpCode#TextEditor#Gui#CompletionWindow#ICompletionData#Description">
+            <summary>
+            Gets a description.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionData.XmlDocumentationToText(System.String)">
+            <summary>
+            Converts the given XML documentation to text.
+            </summary>
+            <param name="xmlDoc">XML documentation that gets converted.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionData.AddOverload">
+            <summary>
+            Adds an overload.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionData.GetText(ICSharpCode.SharpDevelop.Dom.IEntity)">
+            <summary>
+            Converts a member to text.
+            Returns the declaration of the member as C# or VB code, e.g.
+            "public void MemberName(string parameter)".
+            </summary>
+            <param name="entity">Entity that gets converted.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:CSharpEditor.CodeCompletionKeyHandler">
+            <summary>
+            CodeCompletionKeyHandler.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionKeyHandler.Attach(CSharpEditor.MainForm,ICSharpCode.TextEditor.TextEditorControl)">
+            <summary>
+            Attaches the events to the editor.
+            </summary>
+            <param name="mainForm">MainForm needed for creating the CodeCompletionKeyHandler.</param>
+            <param name="editor">The editor the events get attached to.</param>
+            <returns>The created CodeCompletionKeyHandler.</returns>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionKeyHandler.TextAreaKeyEventHandler(System.Char)">
+            <summary>
+            Return true to handle the keypress, return false to let the text area handle the keypress.
+            </summary>
+            <param name="key">Key that gets checked.</param>
+            <returns>True, if the keypress was handled.</returns>
+        </member>
+        <member name="T:CSharpEditor.CodeCompletionProvider">
+            <summary>
+            CodeCompletionProvider.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionProvider.#ctor(CSharpEditor.MainForm)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CSharpEditor.CodeCompletionProvider"/> class.
+            </summary>
+            <param name="mainForm">The main form.</param>
+        </member>
+        <member name="P:CSharpEditor.CodeCompletionProvider.DefaultIndex">
+            <summary>
+            Gets the default index.
+            </summary>
+        </member>
+        <member name="P:CSharpEditor.CodeCompletionProvider.ImageList">
+            <summary>
+            Gets the image list.
+            </summary>
+        </member>
+        <member name="P:CSharpEditor.CodeCompletionProvider.PreSelection">
+            <summary>
+            Gets the preselection.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionProvider.GenerateCompletionData(System.String,ICSharpCode.TextEditor.TextArea,System.Char)">
+            <summary>
+            Generators completion data.
+            </summary>
+            <param name="fileName">not used.</param>
+            <param name="textArea">The text area.</param>
+            <param name="charTyped">The character type.</param>
+            <returns>The completion data.</returns>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionProvider.InsertAction(ICSharpCode.TextEditor.Gui.CompletionWindow.ICompletionData,ICSharpCode.TextEditor.TextArea,System.Int32,System.Char)">
+            <summary>
+            Called when entry should be inserted. Forward to the insertion action of the completion data.
+            </summary>
+            <param name="data">The completion data.</param>
+            <param name="textArea">The text area.</param>
+            <param name="insertionOffset">The insertion offset.</param>
+            <param name="key">The key.</param>
+            <returns>Boolean.</returns>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionProvider.ProcessKey(System.Char)">
+            <summary>
+            Processes the key.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>The CompletionDataProviderKeyResult.</returns>
+        </member>
+        <member name="M:CSharpEditor.CodeCompletionProvider.FindExpression(ICSharpCode.TextEditor.TextArea)">
+            <summary>
+            Find the expression the cursor is at.
+            Also determines the context (using statement, "new"-expression etc.) the cursor is at.
+            </summary>
+            <param name="textArea">Textarea that gets searched.</param>
+            <returns>The expression that was found.</returns>
+        </member>
+        <member name="T:CSharpEditor.HostCallbackImplementation">
+            <summary>
+            ICSharpCode.SharpDevelop.Dom was created by extracting code from ICSharpCode.SharpDevelop.dll.
+            There are a few static method calls that refer to GUI code or the code for keeping the parse
+            information. These calls have to be implemented by the application hosting
+            ICSharpCode.SharpDevelop.Dom by settings static fields with a delegate to their method
+            implementation.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.HostCallbackImplementation.Register(CSharpEditor.MainForm)">
+            <summary>
+            Registers the event handlers for the given mainForm.
+            </summary>
+            <param name="mainForm">The main form.</param>
+        </member>
+        <member name="T:CSharpEditor.MainForm">
+            <summary>
+            The main form of the script runner.
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CSharpEditor.MainForm.DummyFileName">
+            <summary>
+            Many SharpDevelop.Dom methods take a file name, which is really just a unique identifier
+            for a file - Dom methods don't try to access code files on disk, so the file does not have
+            to exist.
+            SharpDevelop itself uses internal names of the kind "[randomId]/Class1.cs" to support
+            code-completion in unsaved files.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.MainForm.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CSharpEditor.MainForm"/> class.
+            </summary>
+        </member>
+        <member name="P:CSharpEditor.MainForm.IsVisualBasic">
+            <summary>
+            Gets or sets a value indicating whether to use VB or C#.
+            </summary>
+        </member>
+        <member name="P:CSharpEditor.MainForm.Language">
+            <summary>
+            Gets or sets the language.
+            </summary>
+        </member>
+        <member name="P:CSharpEditor.MainForm.LastCompilationUnit">
+            <summary>
+            Gets or sets the last compilation unit.
+            </summary>
+        </member>
+        <member name="P:CSharpEditor.MainForm.MyProjectContent">
+            <summary>
+            Gets or sets the DefaultProjectContent.
+            </summary>
+        </member>
+        <member name="P:CSharpEditor.MainForm.ParseInformation">
+            <summary>
+            Gets or sets the ParseInformation.
+            </summary>
+        </member>
+        <member name="P:CSharpEditor.MainForm.PcRegistry">
+            <summary>
+            Gets or sets the ProjectContentRegistry.
+            </summary>
+        </member>
+        <member name="P:CSharpEditor.MainForm.Text">
+            <summary>
+            Gets or sets the text.
+            </summary>
+            <returns>The text associated with this control.</returns>
+        </member>
+        <member name="M:CSharpEditor.MainForm.Init">
+            <summary>
+            Inits this instance.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.MainForm.SetCs">
+            <summary>
+            Sets as CS.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.MainForm.SetVb">
+            <summary>
+            Sets as VB.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.MainForm.Shutdown">
+            <summary>
+            Shutdowns this instance.
+            </summary>
+        </member>
+        <member name="F:CSharpEditor.MainForm.components">
+            <summary>
+            Designer variable used to keep track of non-visual components.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.MainForm.Dispose(System.Boolean)">
+            <summary>
+            Disposes resources used by the form.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CSharpEditor.MainForm.InitializeComponent">
+            <summary>
+            This method is required for Windows Forms designer support.
+            Do not change the method contents inside the source code editor. The Forms designer might
+            not be able to load this method if it was changed manually.
+            </summary>
+        </member>
+        <member name="T:CSharpEditor.ToolTipProvider">
+            <summary>
+            ToolTipProvider.
+            </summary>
+        </member>
+        <member name="M:CSharpEditor.ToolTipProvider.Attach(CSharpEditor.MainForm,ICSharpCode.TextEditor.TextEditorControl)">
+            <summary>
+            Creates a ToolTipProvider for the main form and attaches it to the ActiveTextAreaControl of the editor.
+            </summary>
+            <param name="mainForm">The main form.</param>
+            <param name="editor">The editor.</param>
+        </member>
+    </members>
+</doc>

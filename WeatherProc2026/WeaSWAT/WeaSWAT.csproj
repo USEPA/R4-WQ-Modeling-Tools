@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutputPath>..\bin\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atcData">
+      <HintPath>..\..\atcPackages\atcData.dll</HintPath>
+    </Reference>
+    <Reference Include="atcTimeseriesScript">
+      <HintPath>..\..\atcPackages\atcTimeseriesScript.dll</HintPath>
+    </Reference>
+    <Reference Include="atcUtility">
+      <HintPath>..\..\atcPackages\atcUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="atcWDM">
+      <HintPath>..\..\atcPackages\atcWDM.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SWATWriteWea\SWATWriteWea.vbproj" />
+    <ProjectReference Include="..\WeaUtil\WeaUtil.csproj" />
+    <ProjectReference Include="..\WeaWDM\WeaWDM.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DotSpatial.Analysis" Version="4.0.656" />
+    <PackageReference Include="DotSpatial.Controls" Version="4.0.656" />
+    <PackageReference Include="DotSpatial.Data" Version="4.0.656" />
+    <PackageReference Include="DotSpatial.Projections" Version="4.0.656" />
+    <PackageReference Include="DotSpatial.Symbology" Version="4.0.656" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="NetTopologySuite" Version="2.6.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+</Project>
