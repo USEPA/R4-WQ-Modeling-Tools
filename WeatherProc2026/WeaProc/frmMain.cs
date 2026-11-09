@@ -90,7 +90,7 @@ namespace NCEIData
         //for selected stations
         public SortedDictionary<string, MetGages> dictSelSites =
                  new SortedDictionary<string, MetGages>();
-        
+
         //dictionary of gages/grids
         public SortedDictionary<string, string> dictGages =
                  new SortedDictionary<string, string>();
@@ -309,7 +309,7 @@ namespace NCEIData
             stateshp = Path.Combine(gisDir, STATES);
             huc8shp = Path.Combine(gisDir, HUC8SM);
             worldshp = Path.Combine(gisDir, WORLD);
-            tzshp= Path.Combine(gisDir, WORLDTZ);
+            tzshp = Path.Combine(gisDir, WORLDTZ);
 
             try
             {
@@ -450,7 +450,7 @@ namespace NCEIData
                 Directory.CreateDirectory(logPath);
 
             double dt = DateTime.Now.ToOADate();
-            string logFile = Path.Combine(logPath, "WeatherProcessor_"+dt.ToString()+".log");
+            string logFile = Path.Combine(logPath, "WeatherProcessor_" + dt.ToString() + ".log");
             if (File.Exists(logFile)) File.Delete(logFile);
             fslog = new FileStream(logFile, FileMode.Create);
             wrlog = new StreamWriter(fslog);
@@ -460,8 +460,8 @@ namespace NCEIData
         {
             //show form for download, depends on datasource
             dictOptVars = new Dictionary<string, bool>();
-            
-            if (optDataSource==(int)MetDataSource.CMIP6)
+
+            if (optDataSource == (int)MetDataSource.CMIP6)
             {
                 //CMIP6 climate scenario data
                 frmDownloadCMIP fGetCMIPData = new frmDownloadCMIP(this, GridBounds);
@@ -629,7 +629,7 @@ namespace NCEIData
                     if (!cmip6.IsValidScenarioPathway()) return;
                     cmip6.ProcessFilesToDownload();
                     break;
-                
+
                 case (int)MetDataSource.EDDE:
                     //clsEDDE processes selected grids for all selected variables and
                     //specified scenario and pathway
@@ -674,7 +674,7 @@ namespace NCEIData
         /// Executed when map selection change
         /// </summary>
         /// <returns></returns>
-        
+
         public int GetGageFromMap()
         {
             Cursor.Current = Cursors.WaitCursor;
@@ -705,8 +705,8 @@ namespace NCEIData
             if (dictSelSites.Count > 0) dictSelSites.Clear();
 
             //lstGage is list of seleted grid/stations
-            float north = -60, south=90, west =180, east =-180;
-            
+            float north = -60, south = 90, west = 180, east = -180;
+
             try
             {
                 foreach (var item in lstGage)
@@ -716,13 +716,13 @@ namespace NCEIData
                     DataRow dr = item.DataRow;
                     st = dr["Station_ID"].ToString();
                     stnam = dr["Station"].ToString();
-                    
+
                     //for bounding box
                     north = Math.Max(north, Convert.ToSingle(dr["Lat"]));
                     south = Math.Min(south, Convert.ToSingle(dr["Lat"]));
                     east = Math.Max(east, Convert.ToSingle(dr["Lon"]));
                     west = Math.Min(west, Convert.ToSingle(dr["Lon"]));
-                    
+
                     //for dictSta, duplicate 
                     List<string> attrib = new List<string>();
                     attrib.Add(dr["Station"].ToString()); //0-station name
@@ -822,7 +822,7 @@ namespace NCEIData
         public int GetGridFromMap()
         {
             Debug.WriteLine("Entering GetGridFromMap ...");
-            
+
             //for CMIP6 grid, always use the grids within bounding box
             Cursor.Current = Cursors.WaitCursor;
             int numGage = 0;
@@ -872,7 +872,7 @@ namespace NCEIData
                 //Debug.WriteLine("west=" + west.ToString("F3"));
 #endif
                 float elev = 2.0F;
-                for (float lat = south; lat <= north; lat=lat+0.25F)
+                for (float lat = south; lat <= north; lat = lat + 0.25F)
                 {
                     for (float lon = west; lon <= east; lon = lon + 0.25F)
                     {
@@ -973,7 +973,7 @@ namespace NCEIData
                 foreach (var item in lstGage)
                 {
                     DataRow dr = item.DataRow;
-                    
+
                     stnam = dr["Station_ID"].ToString();
                     elev = Convert.ToSingle(dr["Elev"].ToString());
                     lat = Convert.ToSingle(dr["Lat"]);
@@ -1018,7 +1018,7 @@ namespace NCEIData
 
                     if (!dictSelSites.ContainsKey(stnam))
                         dictSelSites.Add(stnam, gage);
-                    
+
                     gage = null;
                     attrib = null;
                 }
@@ -1061,7 +1061,7 @@ namespace NCEIData
             else
                 ID = "C" + (Convert.ToInt32(xid)).ToString() + (Convert.ToInt32(yid)).ToString();
 
-            Debug.WriteLine("GridX = " + xlon.ToString() +", GridY = "+ylat.ToString() + ", ID=" + ID);
+            Debug.WriteLine("GridX = " + xlon.ToString() + ", GridY = " + ylat.ToString() + ", ID=" + ID);
             return ID;
         }
 
@@ -1254,7 +1254,7 @@ namespace NCEIData
                 Debug.WriteLine("TabSelection: num selected rows =" + dgvSta.SelectedRows.Count.ToString());
             }
         }
-        
+
         private void mnuAbout_Click(object sender, EventArgs e)
         {
             frmAbout fAbout = new frmAbout();
@@ -1454,7 +1454,7 @@ namespace NCEIData
                 return;
             }
         }
-        
+
         public void SearchDataset()
         {
             if (mnuDownload.Enabled) mnuDownload.Enabled = false;
@@ -1496,7 +1496,7 @@ namespace NCEIData
                 aList.Add(arr[2].ToString());
                 aList.Add(arr[5].ToString());
 #if debug
-         //Debug.WriteLine("{0},{1},{2}",skey, arr[2].ToString(),arr[5].ToString());
+                //Debug.WriteLine("{0},{1},{2}",skey, arr[2].ToString(),arr[5].ToString());
 #endif
                 if (!dictCMIP6Files.ContainsKey(skey))
                     dictCMIP6Files.Add(skey, aList);
@@ -1726,7 +1726,7 @@ namespace NCEIData
                 {
                     string tunit = lDataSet.Attributes.GetValue("Time Unit").ToString().Trim();
                     if (tunit.Contains("Year"))
-                        numYr++; 
+                        numYr++;
                     lDataSet.Clear();
                 }
                 lWdmDS = null;
@@ -1780,7 +1780,7 @@ namespace NCEIData
                     WdmFile = openFD.FileName;
                     isWDM = true;
                 }
-            }                
+            }
 
             if (isWDM)
             {
@@ -1991,7 +1991,8 @@ namespace NCEIData
             {
                 case (int)ZoomRegion.States:
                     //Debug.WriteLine("Area=" + selectedArea);
-                    if (!selectedArea.Contains("US"))
+                    //if (!selectedArea.Contains("US"))
+                    if (selectedArea.Contains("US"))
                     {
                         wrld.SelectionEnabled = false;
                         st.SelectionEnabled = true;
@@ -3260,5 +3261,10 @@ namespace NCEIData
             }
         }
 
+        private void nASAEarthdataLoginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLogin fLogin = new frmLogin();
+            fLogin.ShowDialog();
+        }
     }
 }
